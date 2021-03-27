@@ -7,7 +7,7 @@ module.exports = (app) => {
   app.use(bodyParser.json());
 
   // use selected prefix for api routes
-  app.use(config.apiPrefix, apiRoutes());
+  app.use(config.apiPrefix, apiRoutes(app));
 
   // catch 404 and forward to error handler
   app.use((req, res, next) => {

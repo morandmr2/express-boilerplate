@@ -26,4 +26,3 @@ process
     Logger.error(`Unhandled Promise rejection : ${err}`);
     process.exit(1);
   });
-  
