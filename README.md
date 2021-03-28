@@ -1,8 +1,18 @@
 # express-boilerplate
 
+This project uses node v14.15.5.
 
-1 - Run npm i to install dependencies
+## Installation and setup 
 
-2 - Copy .env.example file to .env and set your parameters
+1 - Run npm i to install dependencies.
 
-3 - Run nodemon src/app.js or node src/app.js to start server
+2 - Copy .env.example file to .env and set your parameters.
+
+
+## Start server
+
+Run `npm run start` to start server.
+
+## Run tests
+
+Run `npm run test` to run tests.
