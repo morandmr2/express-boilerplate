@@ -1,11 +1,12 @@
-module.exports = (app) => {
-  const { models } = app.get('sequelizeClient');
+class TestService {
+  constructor(app) {
+    this.app = app;
+  }
 
-  async function findById(id) {
+  async findById(id) {
+    const { models } = this.app.get('sequelizeClient');
     return await models.test.findByPk(id);
   }
-
-  return {
-    findById,
-  }
 }
+
+module.exports = TestService;

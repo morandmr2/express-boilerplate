@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 const config = require('../config');
 const apiRoutes = require('../api'); 
+const { Logger } = require('../utils');
 
 module.exports = (app) => {
   // parse body responses to json format for all endpoints
@@ -25,4 +26,6 @@ module.exports = (app) => {
       },
     });
   });
+
+  Logger.info('Express configured successfully.');
 };
